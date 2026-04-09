@@ -164,6 +164,20 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Ad Banner */}
+        <div className="mb-12 md:mb-16">
+          <div className="min-h-[50px] flex items-center justify-center">
+            <iframe 
+              src="https://www.profitablecpmratenetwork.com/jpu5xippg?key=6338972fc5b07b3a0c19b8ac58a4142e" 
+              width="728" 
+              height="90" 
+              frameBorder="0"
+              scrolling="no"
+              title="Advertisement"
+            />
+          </div>
+        </div>
+
         {/* Image Converters Section */}
         <div id="image-tools" className="mb-12 md:mb-16">
           <div className="flex items-center gap-3 mb-4 md:mb-6">

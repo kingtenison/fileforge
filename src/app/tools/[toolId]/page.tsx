@@ -198,6 +198,18 @@ export default function ToolPage({ params: paramsPromise }: PageProps) {
             </div>
           </div>
         </div>
+
+        {/* Ad Banner */}
+        <div className="mb-6 flex justify-center">
+          <iframe 
+            src="https://www.profitablecpmratenetwork.com/jpu5xippg?key=6338972fc5b07b3a0c19b8ac58a4142e" 
+            width="728" 
+            height="90" 
+            frameBorder="0"
+            scrolling="no"
+            title="Advertisement"
+          />
+        </div>
         
         {/* Upload/Convert Area */}
         {status === 'idle' && (
