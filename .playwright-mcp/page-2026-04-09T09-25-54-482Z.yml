@@ -1,0 +1,121 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e130] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e131]:
+      - img [ref=e132]
+    - generic [ref=e136]:
+      - button "Open issues overlay" [ref=e137]:
+        - generic [ref=e138]:
+          - generic [ref=e139]: "0"
+          - generic [ref=e140]: "1"
+        - generic [ref=e141]: Issue
+      - button "Collapse issues badge" [ref=e142]:
+        - img [ref=e143]
+  - alert [ref=e135]
+  - generic [ref=e145]:
+    - banner [ref=e146]:
+      - generic [ref=e148]:
+        - link "FileForge" [ref=e149] [cursor=pointer]:
+          - /url: /
+          - img [ref=e151]
+          - generic [ref=e153]: FileForge
+        - navigation [ref=e154]:
+          - link "Tools" [ref=e155] [cursor=pointer]:
+            - /url: "#tools"
+          - link "Contact" [ref=e156] [cursor=pointer]:
+            - /url: "#contact"
+    - generic [ref=e158]:
+      - heading "Free Online File Converter" [level=1] [ref=e159]
+      - paragraph [ref=e160]: Convert your files quickly and easily. No registration required. Supports images, PDFs, documents, and audio files.
+    - main [ref=e161]:
+      - generic [ref=e162]:
+        - generic [ref=e163]:
+          - generic [ref=e164]: 🖼️
+          - heading "Image Converters" [level=2] [ref=e165]
+        - generic [ref=e166]:
+          - link "🖼️ Image Compress Reduce image file size while maintaining quality JPG JPEG PNG WEBP +1" [ref=e167] [cursor=pointer]:
+            - /url: /tools/image-compress
+            - generic [ref=e169]:
+              - generic [ref=e170]: 🖼️
+              - generic [ref=e171]:
+                - heading "Image Compress" [level=3] [ref=e172]
+                - paragraph [ref=e173]: Reduce image file size while maintaining quality
+                - generic [ref=e174]:
+                  - generic [ref=e175]: JPG
+                  - generic [ref=e176]: JPEG
+                  - generic [ref=e177]: PNG
+                  - generic [ref=e178]: WEBP
+                  - generic [ref=e179]: "+1"
+              - img [ref=e181]
+          - link "🔄 JPG to WebP Convert JPG images to WebP format for better compression JPG JPEG" [ref=e183] [cursor=pointer]:
+            - /url: /tools/jpg-to-webp
+            - generic [ref=e185]:
+              - generic [ref=e186]: 🔄
+              - generic [ref=e187]:
+                - heading "JPG to WebP" [level=3] [ref=e188]
+                - paragraph [ref=e189]: Convert JPG images to WebP format for better compression
+                - generic [ref=e190]:
+                  - generic [ref=e191]: JPG
+                  - generic [ref=e192]: JPEG
+              - img [ref=e194]
+          - link "🔁 WebP to JPG Convert WebP images to JPG for better compatibility WEBP" [ref=e196] [cursor=pointer]:
+            - /url: /tools/webp-to-jpg
+            - generic [ref=e198]:
+              - generic [ref=e199]: 🔁
+              - generic [ref=e200]:
+                - heading "WebP to JPG" [level=3] [ref=e201]
+                - paragraph [ref=e202]: Convert WebP images to JPG for better compatibility
+                - generic [ref=e204]: WEBP
+              - img [ref=e206]
+          - link "🖌️ PNG to JPG Convert PNG images to JPG format PNG" [ref=e208] [cursor=pointer]:
+            - /url: /tools/png-to-jpg
+            - generic [ref=e210]:
+              - generic [ref=e211]: 🖌️
+              - generic [ref=e212]:
+                - heading "PNG to JPG" [level=3] [ref=e213]
+                - paragraph [ref=e214]: Convert PNG images to JPG format
+                - generic [ref=e216]: PNG
+              - img [ref=e218]
+          - link "🎨 JPG to PNG Convert JPG images to PNG format JPG JPEG" [ref=e220] [cursor=pointer]:
+            - /url: /tools/jpg-to-png
+            - generic [ref=e222]:
+              - generic [ref=e223]: 🎨
+              - generic [ref=e224]:
+                - heading "JPG to PNG" [level=3] [ref=e225]
+                - paragraph [ref=e226]: Convert JPG images to PNG format
+                - generic [ref=e227]:
+                  - generic [ref=e228]: JPG
+                  - generic [ref=e229]: JPEG
+              - img [ref=e231]
+          - link "📦 PNG to WebP Convert PNG images to WebP format PNG" [ref=e233] [cursor=pointer]:
+            - /url: /tools/png-to-webp
+            - generic [ref=e235]:
+              - generic [ref=e236]: 📦
+              - generic [ref=e237]:
+                - heading "PNG to WebP" [level=3] [ref=e238]
+                - paragraph [ref=e239]: Convert PNG images to WebP format
+                - generic [ref=e241]: PNG
+              - img [ref=e243]
+    - contentinfo [ref=e245]:
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - generic [ref=e249]:
+              - img [ref=e251]
+              - generic [ref=e253]: FileForge
+            - paragraph [ref=e254]: Free online file conversion tool. Fast, secure, no registration required.
+          - generic [ref=e255]:
+            - heading "Quick Links" [level=4] [ref=e256]
+            - list [ref=e257]:
+              - listitem [ref=e258]:
+                - link "Image Converters" [ref=e259] [cursor=pointer]:
+                  - /url: "#tools"
+          - generic [ref=e260]:
+            - heading "Legal" [level=4] [ref=e261]
+            - list [ref=e262]:
+              - listitem [ref=e263]:
+                - link "Privacy Policy" [ref=e264] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e265]:
+                - link "Terms of Service" [ref=e266] [cursor=pointer]:
+                  - /url: "#"
+        - paragraph [ref=e268]: © 2026 FileForge. All rights reserved.

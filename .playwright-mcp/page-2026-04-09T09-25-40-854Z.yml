@@ -1,0 +1,111 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link "FileForge" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img [ref=e8]
+          - generic [ref=e10]: FileForge
+        - navigation [ref=e11]:
+          - link "Tools" [ref=e12] [cursor=pointer]:
+            - /url: "#tools"
+          - link "Contact" [ref=e13] [cursor=pointer]:
+            - /url: "#contact"
+    - generic [ref=e15]:
+      - heading "Free Online File Converter" [level=1] [ref=e16]
+      - paragraph [ref=e17]: Convert your files quickly and easily. No registration required. Supports images, PDFs, documents, and audio files.
+    - main [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: 🖼️
+          - heading "Image Converters" [level=2] [ref=e22]
+        - generic [ref=e23]:
+          - link "🖼️ Image Compress Reduce image file size while maintaining quality JPG JPEG PNG WEBP +1" [ref=e24] [cursor=pointer]:
+            - /url: /tools/image-compress
+            - generic [ref=e26]:
+              - generic [ref=e27]: 🖼️
+              - generic [ref=e28]:
+                - heading "Image Compress" [level=3] [ref=e29]
+                - paragraph [ref=e30]: Reduce image file size while maintaining quality
+                - generic [ref=e31]:
+                  - generic [ref=e32]: JPG
+                  - generic [ref=e33]: JPEG
+                  - generic [ref=e34]: PNG
+                  - generic [ref=e35]: WEBP
+                  - generic [ref=e36]: "+1"
+              - img [ref=e38]
+          - link "🔄 JPG to WebP Convert JPG images to WebP format for better compression JPG JPEG" [ref=e40] [cursor=pointer]:
+            - /url: /tools/jpg-to-webp
+            - generic [ref=e42]:
+              - generic [ref=e43]: 🔄
+              - generic [ref=e44]:
+                - heading "JPG to WebP" [level=3] [ref=e45]
+                - paragraph [ref=e46]: Convert JPG images to WebP format for better compression
+                - generic [ref=e47]:
+                  - generic [ref=e48]: JPG
+                  - generic [ref=e49]: JPEG
+              - img [ref=e51]
+          - link "🔁 WebP to JPG Convert WebP images to JPG for better compatibility WEBP" [ref=e53] [cursor=pointer]:
+            - /url: /tools/webp-to-jpg
+            - generic [ref=e55]:
+              - generic [ref=e56]: 🔁
+              - generic [ref=e57]:
+                - heading "WebP to JPG" [level=3] [ref=e58]
+                - paragraph [ref=e59]: Convert WebP images to JPG for better compatibility
+                - generic [ref=e61]: WEBP
+              - img [ref=e63]
+          - link "🖌️ PNG to JPG Convert PNG images to JPG format PNG" [ref=e65] [cursor=pointer]:
+            - /url: /tools/png-to-jpg
+            - generic [ref=e67]:
+              - generic [ref=e68]: 🖌️
+              - generic [ref=e69]:
+                - heading "PNG to JPG" [level=3] [ref=e70]
+                - paragraph [ref=e71]: Convert PNG images to JPG format
+                - generic [ref=e73]: PNG
+              - img [ref=e75]
+          - link "🎨 JPG to PNG Convert JPG images to PNG format JPG JPEG" [ref=e77] [cursor=pointer]:
+            - /url: /tools/jpg-to-png
+            - generic [ref=e79]:
+              - generic [ref=e80]: 🎨
+              - generic [ref=e81]:
+                - heading "JPG to PNG" [level=3] [ref=e82]
+                - paragraph [ref=e83]: Convert JPG images to PNG format
+                - generic [ref=e84]:
+                  - generic [ref=e85]: JPG
+                  - generic [ref=e86]: JPEG
+              - img [ref=e88]
+          - link "📦 PNG to WebP Convert PNG images to WebP format PNG" [ref=e90] [cursor=pointer]:
+            - /url: /tools/png-to-webp
+            - generic [ref=e92]:
+              - generic [ref=e93]: 📦
+              - generic [ref=e94]:
+                - heading "PNG to WebP" [level=3] [ref=e95]
+                - paragraph [ref=e96]: Convert PNG images to WebP format
+                - generic [ref=e98]: PNG
+              - img [ref=e100]
+    - contentinfo [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - img [ref=e108]
+              - generic [ref=e110]: FileForge
+            - paragraph [ref=e111]: Free online file conversion tool. Fast, secure, no registration required.
+          - generic [ref=e112]:
+            - heading "Quick Links" [level=4] [ref=e113]
+            - list [ref=e114]:
+              - listitem [ref=e115]:
+                - link "Image Converters" [ref=e116] [cursor=pointer]:
+                  - /url: "#tools"
+          - generic [ref=e117]:
+            - heading "Legal" [level=4] [ref=e118]
+            - list [ref=e119]:
+              - listitem [ref=e120]:
+                - link "Privacy Policy" [ref=e121] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e122]:
+                - link "Terms of Service" [ref=e123] [cursor=pointer]:
+                  - /url: "#"
+        - paragraph [ref=e125]: © 2026 FileForge. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e131] [cursor=pointer]:
+    - img [ref=e132]

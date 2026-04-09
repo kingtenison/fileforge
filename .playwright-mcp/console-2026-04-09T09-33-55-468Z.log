@@ -1,0 +1,636 @@
+[     248ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     275ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  162920ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  162935ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  167422ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  167453ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  169373ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  169391ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  435695ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  435757ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  435926ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  436480ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  436540ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  436654ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  436983ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[  436983ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/?_rsc=wnywt:0
+[  437016ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[  437143ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  437209ms] Error: ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/lib/conversion.ts:96:9)
+    at Object.getCompilationErrors (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\base-server.js:1745:26)
+[  437209ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  437214ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  437288ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  437320ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  437634ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  437688ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  445253ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  445282ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  445335ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[  445401ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  445424ms] Error: ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/lib/conversion.ts:96:9)
+    at Object.getCompilationErrors (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\base-server.js:1745:26)
+[  445418ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  445420ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  445476ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  445543ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  446796ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  446853ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  458918ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  458943ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  458962ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  458983ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[  459022ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[  459042ms] Error: ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/lib/conversion.ts:96:9)
+    at Object.getCompilationErrors (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\dev\next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\RYZEN 7 NITRO\Desktop\FileForge\node_modules\next\dist\server\base-server.js:1745:26)
+[  459033ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  459034ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  459079ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  459140ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  460526ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  460591ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  472291ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  472374ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  472404ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  472614ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  472673ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  473057ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  473124ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  474445ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  474509ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  474978ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  475058ms] [ERROR] ./src/lib/conversion.ts:96:9
+The left-hand side of an assignment expression must be a variable or a property access.
+  94 |       
+  95 |       if (outputFormat === 'jpg') {
+> 96 |         ctx?.fillStyle = '#FFFFFF';
+     |         ^^^^^^^^^^^^^^
+  97 |         ctx?.fillRect(0, 0, canvas.width, canvas.height);
+  98 |       }
+  99 |
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/conversion.ts [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Client Component Browser]
+    ./src/app/tools/[toolId]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/conversion.ts [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Client Component SSR]
+    ./src/app/tools/[toolId]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[  475125ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  495856ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  496087ms] [LOG] [Fast Refresh] done in 78ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[  496251ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  496338ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  538962ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[  539088ms] [LOG] [Fast Refresh] done in 82ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
