@@ -176,6 +176,7 @@ export default function Home() {
               title="Advertisement"
             />
           </div>
+          <script src="https://pl29108204.profitablecpmratenetwork.com/32/fc/de/32fcde0219dfe1139b9e8dc5f18dadb9.js"></script>
         </div>
 
         {/* Image Converters Section */}
