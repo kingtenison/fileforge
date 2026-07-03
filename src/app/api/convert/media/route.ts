@@ -4,19 +4,31 @@ const CONVERT_FAST_API_KEY = 'fast_prod_JSKJCHXLCU2ILS4NBYTL3D5FLJ5ZMZXVDXFVPWSF
 const CONVERT_FAST_BASE_URL = 'https://api.tools.fast';
 
 const formatMapping: Record<string, string> = {
-  'doc': 'pdf',
-  'docx': 'pdf',
-  'pdf': 'docx',
-  'xls': 'pdf',
-  'xlsx': 'pdf',
-  'ppt': 'pdf',
-  'pptx': 'pdf',
-  'txt': 'pdf',
+  // Video
+  'mp4': 'webm',
+  'avi': 'mp4',
+  'mov': 'mp4',
+  'mkv': 'webm',
+  'webm': 'mp4',
+  // Audio
+  'mp3': 'wav',
+  'wav': 'mp3',
+  'aac': 'mp3',
+  'flac': 'mp3',
+  'ogg': 'mp3',
+  'm4a': 'mp3',
+  'wma': 'mp3',
 };
 
 const mimeTypes: Record<string, string> = {
-  'pdf': 'application/pdf',
-  'docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+  'mp4': 'video/mp4',
+  'webm': 'video/webm',
+  'mp3': 'audio/mpeg',
+  'wav': 'audio/wav',
+  'aac': 'audio/aac',
+  'flac': 'audio/flac',
+  'ogg': 'audio/ogg',
+  'm4a': 'audio/mp4',
 };
 
 async function submitConversionJob(file: File, targetFormat: string): Promise<string> {
@@ -101,6 +113,7 @@ export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
     const file = formData.get('file') as File;
+    const explicitTarget = formData.get('outputFormat') as string | null;
 
     if (!file) {
       return NextResponse.json(
@@ -110,7 +123,8 @@ export async function POST(request: NextRequest) {
     }
 
     const ext = file.name.split('.').pop()?.toLowerCase() || '';
-    const targetFormat = formatMapping[ext];
+    // Use explicit outputFormat from the tool if provided, fall back to extension mapping
+    const targetFormat = explicitTarget || formatMapping[ext];
 
     if (!targetFormat) {
       return NextResponse.json(
@@ -119,7 +133,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Step 1: Submit the conversion job with the file directly
+    // Step 1: Submit the conversion job
     const jobId = await submitConversionJob(file, targetFormat);
 
     // Step 2: Poll until the job completes
@@ -140,7 +154,7 @@ export async function POST(request: NextRequest) {
     });
 
   } catch (error) {
-    console.error('Document conversion error:', error);
+    console.error('Media conversion error:', error);
     const errorMessage = error instanceof Error ? error.message : 'Conversion failed';
     return NextResponse.json(
       { success: false, error: errorMessage },
@@ -151,10 +165,11 @@ export async function POST(request: NextRequest) {
 
 export async function GET() {
   return NextResponse.json({
-    message: 'Document Converter API (Convert.FAST)',
+    message: 'Media Converter API (Convert.FAST)',
     status: 'active',
     conversions: [
-      'doc→pdf', 'docx→pdf', 'pdf→docx', 'xls→pdf', 'xlsx→pdf', 'ppt→pdf', 'pptx→pdf', 'txt→pdf'
+      'mp4→webm', 'avi→mp4', 'mov→mp4', 'mkv→webm', 'webm→mp4',
+      'mp3→wav', 'wav→mp3', 'aac→mp3', 'flac→mp3', 'ogg→mp3', 'm4a→mp3', 'wma→mp3',
     ]
   });
 }

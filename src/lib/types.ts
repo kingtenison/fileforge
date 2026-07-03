@@ -10,7 +10,7 @@ export interface ConversionRequest {
   options?: Record<string, string | number | boolean>;
 }
 
-export type ToolColor = 'purple' | 'orange' | 'pink' | 'cyan' | 'green' | 'blue' | 'red' | 'yellow' | 'emerald' | 'violet' | 'indigo' | 'teal';
+export type ToolColor = 'purple' | 'orange' | 'pink' | 'cyan' | 'green' | 'blue' | 'red' | 'yellow' | 'emerald' | 'violet' | 'indigo' | 'teal' | 'fuchsia' | 'amber' | 'rose';
 
 export interface Tool {
   id: string;

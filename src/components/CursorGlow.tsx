@@ -1,17 +1,17 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 
 export default function CursorGlow() {
   const [position, setPosition] = useState({ x: -1000, y: -1000 });
   const [color, setColor] = useState('#22d3ee');
 
-  const colors = ['#22d3ee', '#a855f7', '#f472b6', '#fb923c', '#34d399', '#60a5fa'];
+  const colors = useMemo(() => ['#22d3ee', '#a855f7', '#f472b6', '#fb923c', '#34d399', '#60a5fa'], []);
 
   const handleMouseMove = useCallback((e: MouseEvent) => {
     setPosition({ x: e.clientX, y: e.clientY });
     setColor(colors[Math.floor(Math.random() * colors.length)]);
-  }, []);
+  }, [colors]);
 
   useEffect(() => {
     document.addEventListener('mousemove', handleMouseMove);

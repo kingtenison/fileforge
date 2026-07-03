@@ -1,3 +1,5 @@
+import { removeBackground } from '@imgly/background-removal';
+
 export function downloadFile(url: string, fileName: string): void {
   const link = document.createElement('a');
   link.href = url;
@@ -73,13 +75,16 @@ export async function compressImageClientSide(
       ctx.drawImage(img, 0, 0);
     }
     
-    const blob = await canvasToBlob(canvas, 'image/jpeg', quality);
+    const ext = file.name.split('.').pop()?.toLowerCase() || 'jpg';
+    const outputFormat = ext === 'png' ? 'png' : ext === 'webp' ? 'webp' : 'jpg';
+    const mimeType = getMimeType(outputFormat);
+    const blob = await canvasToBlob(canvas, mimeType, quality);
     
     if (blob) {
       return { 
         success: true, 
         outputBlob: blob,
-        outputExtension: 'jpg'
+        outputExtension: getExtension(outputFormat)
       };
     }
     return { success: false, error: 'Compression failed - no blob' };
@@ -128,6 +133,26 @@ export async function convertImageClientSide(
       };
     }
     return { success: false, error: 'Conversion failed - no blob' };
+  } catch (error) {
+    return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
+  }
+}
+
+export async function removeBackgroundClientSide(
+  file: File
+): Promise<{ success: boolean; outputBlob?: Blob; outputExtension?: string; error?: string }> {
+  try {
+    const blob = await removeBackground(file, {
+      progress: (key, current, total) => {
+        console.log(`${key}: ${current}/${total}`);
+      },
+    });
+    
+    return { 
+      success: true, 
+      outputBlob: blob,
+      outputExtension: 'png'
+    };
   } catch (error) {
     return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
   }

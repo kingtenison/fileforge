@@ -89,27 +89,26 @@ export default function FileUploader({
   if (selectedFile) {
     return (
       <div 
-        className="flex items-center justify-between p-4 rounded-xl border hover-lift"
+        className="flex items-center justify-between p-4 rounded-xl border bg-white"
         style={{ 
-          background: `linear-gradient(135deg, ${color}15, ${color}08)`,
           borderColor: `${color}30`
         }}
       >
         <div className="flex items-center gap-3 min-w-0">
           <div 
-            className="w-10 h-10 rounded-lg flex items-center justify-center text-white"
+            className="w-10 h-10 rounded-lg flex items-center justify-center text-white shadow-sm"
             style={{ background: `linear-gradient(135deg, ${color}, ${color}cc)` }}
           >
             ✓
           </div>
           <div className="min-w-0">
-            <div className="font-medium truncate max-w-[180px] md:max-w-[200px]">{selectedFile.name}</div>
-            <div className="text-sm text-gray-500">{formatFileSize(selectedFile.size)}</div>
+            <div className="font-medium text-sm text-gray-800 truncate max-w-[180px] md:max-w-[200px]">{selectedFile.name}</div>
+            <div className="text-xs text-gray-400">{formatFileSize(selectedFile.size)}</div>
           </div>
         </div>
         <button
           onClick={handleRemove}
-          className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-white transition-colors flex-shrink-0"
+          className="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-700 transition-colors flex-shrink-0 rounded-lg hover:bg-gray-100"
           aria-label="Remove file"
         >
           ×
@@ -125,12 +124,12 @@ export default function FileUploader({
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
         onClick={() => inputRef.current?.click()}
-        className={`relative p-6 md:p-8 rounded-xl border-2 border-dashed cursor-pointer transition-all hover-lift ${
+        className={`relative p-6 md:p-8 rounded-xl border-2 border-dashed cursor-pointer transition-all hover-lift bg-white ${
           isDragging ? 'scale-[1.02]' : ''
         }`}
         style={{ 
-          borderColor: isDragging ? color : 'rgba(255,255,255,0.1)',
-          background: isDragging ? `linear-gradient(135deg, ${color}10, ${color}05)` : 'rgba(255,255,255,0.02)'
+          borderColor: isDragging ? color : 'rgba(0,0,0,0.08)',
+          background: isDragging ? `linear-gradient(135deg, ${color}08, ${color}03)` : 'white'
         }}
         role="button"
         tabIndex={0}
@@ -138,14 +137,14 @@ export default function FileUploader({
       >
         <div className="flex flex-col items-center text-center">
           <div 
-            className="w-12 h-12 mb-4 rounded-2xl flex items-center justify-center text-2xl text-white hover-lift"
+            className="w-12 h-12 mb-4 rounded-2xl flex items-center justify-center text-2xl text-white shadow-sm"
             style={{ background: `linear-gradient(135deg, ${color}, ${color}cc)` }}
           >
             +
           </div>
-          <div className="font-medium mb-1">Drop your file here</div>
-          <div className="text-sm text-gray-500">or click to browse</div>
-          <div className="text-xs text-gray-600 mt-3">
+          <div className="font-heading font-semibold text-sm text-gray-700 mb-1">Drop your file here</div>
+          <div className="text-sm text-gray-400">or click to browse</div>
+          <div className="text-xs text-gray-400 mt-3">
             Max {formatFileSize(maxSize)} • {acceptedTypes[0].toUpperCase()}+ formats
           </div>
         </div>
@@ -160,7 +159,7 @@ export default function FileUploader({
       </div>
       
       {error && (
-        <p className="text-red-400 text-sm mt-3 text-center">{error}</p>
+        <p className="text-red-500 text-sm mt-3 text-center font-medium">{error}</p>
       )}
     </div>
   );
