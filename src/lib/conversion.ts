@@ -75,16 +75,13 @@ export async function compressImageClientSide(
       ctx.drawImage(img, 0, 0);
     }
     
-    const ext = file.name.split('.').pop()?.toLowerCase() || 'jpg';
-    const outputFormat = ext === 'png' ? 'png' : ext === 'webp' ? 'webp' : 'jpg';
-    const mimeType = getMimeType(outputFormat);
     const blob = await canvasToBlob(canvas, mimeType, quality);
     
     if (blob) {
       return { 
         success: true, 
         outputBlob: blob,
-        outputExtension: getExtension(outputFormat)
+        outputExtension: 'jpg'
       };
     }
     return { success: false, error: 'Compression failed - no blob' };
