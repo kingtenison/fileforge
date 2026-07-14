@@ -231,7 +231,7 @@ export default function ToolPage({ params: paramsPromise }: PageProps) {
               <div className="w-px h-8 bg-gray-200" />
               <div>
                 <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Max Size</div>
-                <div className="font-medium text-gray-800">10MB</div>
+                <div className="font-medium text-gray-800">50MB</div>
               </div>
             </div>
           </div>
@@ -338,7 +338,7 @@ export default function ToolPage({ params: paramsPromise }: PageProps) {
           <div className="grid grid-cols-3 gap-6 text-sm text-gray-500">
             <div>
               <div className="font-medium mb-1" style={{ color: colors.primary }}>1. Upload</div>
-              <div>Select your file (max 10MB)</div>
+              <div>Select your file (max 50MB)</div>
             </div>
             <div>
               <div className="font-medium mb-1" style={{ color: colors.primary }}>2. Convert</div>

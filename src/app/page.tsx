@@ -293,14 +293,14 @@ export default function Home() {
           {/* Stats */}
           <div className="hidden md:flex items-center justify-center gap-4 mt-14 animate-fadeInUp flex-wrap" style={{ opacity: 0, animationDelay: '0.5s', animationFillMode: 'forwards' }}>
             <StatPill value="21" label="Converters" color="text-cyan-600" icon={<UI.Grid />} />
-            <StatPill value="10MB" label="Max File Size" color="text-purple-600" icon={<UI.Bolt />} />
+            <StatPill value="50MB" label="Max File Size" color="text-purple-600" icon={<UI.Bolt />} />
             <StatPill value="100%" label="Free Forever" color="text-pink-600" icon={<UI.Lock />} />
             <StatPill value="500" label="API Credits" color="text-emerald-600" icon={<UI.User />} />
           </div>
           <div className="flex md:hidden items-center justify-center gap-3 mt-10 animate-fadeInUp flex-wrap" style={{ opacity: 0, animationDelay: '0.5s', animationFillMode: 'forwards' }}>
             <span className="text-sm text-gray-400">21 Converters</span>
             <span className="w-1 h-1 rounded-full bg-gray-300" />
-            <span className="text-sm text-gray-400">10MB Max</span>
+            <span className="text-sm text-gray-400">50MB Max</span>
             <span className="w-1 h-1 rounded-full bg-gray-300" />
             <span className="text-sm text-gray-400">Free Forever</span>
           </div>
@@ -406,7 +406,7 @@ export default function Home() {
               <div className="absolute left-[19px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-cyan-200 via-purple-200 to-pink-200 rounded-full" />
 
               <Step number={1} title="Choose Your Converter" description="Browse our 11+ converters organized by category — images or documents. Pick the one that matches your file format." isLast={false} />
-              <Step number={2} title="Upload Your File" description="Drag &amp; drop your file or click to browse. Max 10MB. Image files stay on your device — zero uploads." isLast={false} />
+              <Step number={2} title="Upload Your File" description="Drag &amp; drop your file or click to browse. Max 50MB. Image files stay on your device — zero uploads." isLast={false} />
               <Step number={3} title="Automatic Conversion" description="Our engine processes images in milliseconds. Documents go through secure APIs and are auto-deleted after conversion." isLast={false} />
               <Step number={4} title="Download Instantly" description="Your converted file is ready immediately. No registration, no waiting, no hidden fees. Just download and go." isLast={true} />
             </div>
@@ -462,7 +462,7 @@ export default function Home() {
           <div className="space-y-3">
             <FaqItem question="Is FileForge really free?" answer="Yes! FileForge is completely free to use. No registration, no subscription, no hidden fees. Ever." />
             <FaqItem question="Are my files secure?" answer="Absolutely. Image conversions happen entirely in your browser — your files never leave your device. Document conversions use enterprise-grade secure APIs that auto-delete files after processing." />
-            <FaqItem question="What is the file size limit?" answer="The maximum file size is 10MB per conversion. This ensures fast processing for everyone." />
+            <FaqItem question="What is the file size limit?" answer="The maximum file size is 50MB per conversion. This ensures fast processing for everyone." />
             <FaqItem question="What formats are supported?" answer="Images: JPG, PNG, WebP, GIF. Documents: Word (DOC/DOCX), Excel (XLS/XLSX), PowerPoint (PPT/PPTX), PDF, plain text (TXT). Video: MP4, AVI, MOV, MKV, WebM. Audio: MP3, WAV, AAC, OGG, FLAC." />
             <FaqItem question="Do I need to create an account?" answer="No! You can use all converters instantly without any registration. Just upload your file and convert." />
             <FaqItem question="How many conversions can I do?" answer="Image converters are unlimited (client-side processing). Document converters include 500 free API credits that never expire." />
@@ -476,7 +476,7 @@ export default function Home() {
         <div className="space-y-2">
           {[
             { q: 'Is it really free?', a: 'Yes! No registration needed.' },
-            { q: 'File size limit?', a: 'Maximum 10MB per file.' },
+            { q: 'File size limit?', a: 'Maximum 50MB per file.' },
             { q: 'Are files secure?', a: 'Yes — images stay on your device, documents use secure APIs.' },
             { q: 'How many conversions?', a: 'Unlimited for images, 500 API credits for docs.' },
           ].map((faq, i) => (
