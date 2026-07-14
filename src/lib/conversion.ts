@@ -75,7 +75,7 @@ export async function compressImageClientSide(
       ctx.drawImage(img, 0, 0);
     }
     
-    const blob = await canvasToBlob(canvas, mimeType, quality);
+    const blob = await canvasToBlob(canvas, 'image/jpeg', quality);
     
     if (blob) {
       return { 
