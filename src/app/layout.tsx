@@ -136,6 +136,7 @@ export default function RootLayout({
           src="https://pl29108206.profitablecpmratenetwork.com/0e/e5/9f/0ee59fa065a40934a5cc3ba7d7d6d2ae.js"
           strategy="lazyOnload"
         />
+        <meta name="google-site-verification" content="CxIVpjfT7x3AdeJ4Cp-Xn13Q5BI8dUnilbrD48ocbnU" />
       </head>
       <body>
         <JsonLd data={organizationSchema} />
