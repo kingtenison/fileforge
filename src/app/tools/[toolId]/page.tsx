@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${tool.name} — FileForge`,
       description,
-      url: `https://fileforge.vercel.app/tools/${tool.id}`,
+      url: `https://fileforge-iota.vercel.app/tools/${tool.id}`,
       type: 'website',
       siteName: 'FileForge',
     },
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description,
     },
     alternates: {
-      canonical: `https://fileforge.vercel.app/tools/${tool.id}`,
+      canonical: `https://fileforge-iota.vercel.app/tools/${tool.id}`,
     },
   };
 }
@@ -66,7 +66,7 @@ export default async function ToolPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: tool.name,
-    url: `https://fileforge.vercel.app/tools/${tool.id}`,
+    url: `https://fileforge-iota.vercel.app/tools/${tool.id}`,
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Web Browser',
     description: tool.description,
@@ -85,19 +85,19 @@ export default async function ToolPage({ params }: PageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://fileforge.vercel.app',
+        item: 'https://fileforge-iota.vercel.app',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: tool.category.charAt(0).toUpperCase() + tool.category.slice(1) + ' Converters',
-        item: `https://fileforge.vercel.app/#${tool.category}-tools`,
+        item: `https://fileforge-iota.vercel.app/#${tool.category}-tools`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: tool.name,
-        item: `https://fileforge.vercel.app/tools/${tool.id}`,
+        item: `https://fileforge-iota.vercel.app/tools/${tool.id}`,
       },
     ],
   };

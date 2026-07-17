@@ -6,7 +6,7 @@ import CursorGlow from "@/components/CursorGlow";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fileforge.vercel.app"),
+  metadataBase: new URL("https://fileforge-iota.vercel.app"),
   title: {
     default: "FileForge — Free Online File Converter | Images, Documents, Video & Audio",
     template: "%s | FileForge",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://fileforge.vercel.app",
+    url: "https://fileforge-iota.vercel.app",
     siteName: "FileForge",
     title: "FileForge — Free Online File Converter",
     description:
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://fileforge.vercel.app",
+    canonical: "https://fileforge-iota.vercel.app",
   },
 };
 
@@ -79,8 +79,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "FileForge",
-  url: "https://fileforge.vercel.app",
-  logo: "https://fileforge.vercel.app/logo.png",
+  url: "https://fileforge-iota.vercel.app",
+  logo: "https://fileforge-iota.vercel.app/logo.png",
   description:
     "Free online file converter for images, documents, video, and audio. 21+ tools with no signup required.",
   sameAs: [],
@@ -90,10 +90,10 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "FileForge",
-  url: "https://fileforge.vercel.app",
+  url: "https://fileforge-iota.vercel.app",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://fileforge.vercel.app/?q={search_term_string}",
+    target: "https://fileforge-iota.vercel.app/?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -104,7 +104,7 @@ const softwareSchema = {
   name: "FileForge",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web Browser",
-  url: "https://fileforge.vercel.app",
+  url: "https://fileforge-iota.vercel.app",
   offers: {
     "@type": "Offer",
     price: "0",

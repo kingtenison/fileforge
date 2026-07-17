@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Learn about FileForge — a free online file converter built for speed, privacy, and simplicity. Convert images, documents, video, and audio files without signup.',
   alternates: {
-    canonical: 'https://fileforge.vercel.app/about',
+    canonical: 'https://fileforge-iota.vercel.app/about',
   },
   openGraph: {
     title: 'About FileForge — Free Online File Converter',
@@ -22,11 +22,11 @@ const aboutPageSchema = {
   name: 'About FileForge',
   description:
     'FileForge is a free online file converter for images, documents, video, and audio. Built for speed, privacy, and simplicity.',
-  url: 'https://fileforge.vercel.app/about',
+  url: 'https://fileforge-iota.vercel.app/about',
   mainEntity: {
     '@type': 'Organization',
     name: 'FileForge',
-    url: 'https://fileforge.vercel.app',
+    url: 'https://fileforge-iota.vercel.app',
   },
 };
 
