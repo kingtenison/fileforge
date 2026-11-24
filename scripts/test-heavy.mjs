@@ -2,6 +2,7 @@ import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 import path from 'node:path';
 
+const BASE = process.argv[2] || 'http://localhost:3000';
 const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', args: ['--no-sandbox'] });
 
 async function test(toolId, file, label = toolId) {
@@ -9,7 +10,8 @@ async function test(toolId, file, label = toolId) {
   const page = await ctx.newPage();
   await page.route(/profitablecpmratenetwork|vercel-analytics|fonts\.googleapis/, (r) => r.abort());
   try {
-    await page.goto(`http://localhost:3000/tools/${toolId}`, { waitUntil: 'domcontentloaded' });
+    await page.goto(`${BASE}/tools/${toolId}`, { waitUntil: 'networkidle', timeout: 30000 }).catch(() => {});
+    await page.waitForTimeout(1000);
     await page.locator('input[type=file]').setInputFiles(file);
     await page.locator('button:has-text("Convert")').click();
     await page.waitForSelector('button:has-text("Download")', { timeout: 120000 });

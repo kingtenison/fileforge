@@ -2,6 +2,7 @@ import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 import path from 'node:path';
 
+const BASE = process.argv[2] || 'http://localhost:3000';
 const browser = await chromium.launch({ headless: true, executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', args: ['--no-sandbox'] });
 const ctx = await browser.newContext({ acceptDownloads: true });
 const page = await ctx.newPage();
@@ -18,7 +19,8 @@ const combos = [
 
 for (const combo of combos) {
   try {
-    await page.goto(`http://localhost:3000/tools/${combo.tool}`, { waitUntil: 'domcontentloaded' });
+    await page.goto(`${BASE}/tools/${combo.tool}`, { waitUntil: 'networkidle', timeout: 30000 }).catch(() => {});
+    await page.waitForTimeout(1000);
     await page.locator('input[type=file]').setInputFiles(path.join(t, combo.file));
     await page.locator('button:has-text("Convert")').click();
     await page.waitForSelector('button:has-text("Download")', { timeout: 240000 });

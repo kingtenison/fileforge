@@ -92,7 +92,9 @@ for (const test of cases) {
   await page.route(/profitablecpmratenetwork|vercel-analytics|google-analytics|fonts\.googleapis/, (route) => route.abort());
   let result = { tool: test.id, ok: false, detail: '' };
   try {
-    await page.goto(`${BASE}/tools/${test.id}`, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await page.goto(`${BASE}/tools/${test.id}`, { waitUntil: 'networkidle', timeout: 30000 }).catch(() => {});
+    // React must be hydrated before setting files, otherwise no change event fires.
+    await page.waitForTimeout(1000);
     await page.locator('input[type=file]').setInputFiles(test.files);
     for (const [selector, value] of Object.entries(test.fill || {})) {
       await page.locator(selector).fill(value);
