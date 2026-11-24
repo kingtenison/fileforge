@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getToolById, getToolSeo, getRelatedTools, isClientSide, TOOLS } from '@/lib/tools';
 import { siteUrl } from '@/lib/site';
 import JsonLd from '@/components/JsonLd';
@@ -227,7 +228,19 @@ export default async function ToolPage({ params }: PageProps) {
             <Link href="/about" className="hover:text-gray-800">About</Link>
             <Link href="/privacy" className="hover:text-gray-800">Privacy</Link>
           </nav>
-          <p className="text-xs text-gray-400">© {new Date().getFullYear()} FileForge</p>
+          <div className="text-center md:text-right">
+            <p className="text-xs text-gray-400">© {new Date().getFullYear()} FileForge</p>
+            <a
+              href="https://odarastudios.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-flex items-center gap-1.5 text-xs text-gray-300 hover:text-gray-600 transition-colors"
+              aria-label="Built by Odara Studios"
+            >
+              <Image src="/odara-mark.png" alt="" width={18} height={18} className="h-4 w-4 object-contain" />
+              <span>Built by [=ØDARA=] STUDIOS</span>
+            </a>
+          </div>
         </div>
       </footer>
     </div>

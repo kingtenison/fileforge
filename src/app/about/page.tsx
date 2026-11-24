@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import JsonLd from '@/components/JsonLd';
 import { TOOLS } from '@/lib/tools';
 import { siteUrl } from '@/lib/site';
@@ -172,7 +173,16 @@ export default function AboutPage() {
               </div>
               <div className="text-center md:text-right">
                 <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} FileForge</p>
-                <p className="text-xs text-gray-300 mt-0.5">Built by =[&Ouml;V&Eacute;RK&Iacute;LL]= TECHNOLOGIES</p>
+                <a
+                  href="https://odarastudios.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 inline-flex items-center justify-center gap-1.5 text-xs text-gray-300 hover:text-gray-600 transition-colors md:justify-end"
+                  aria-label="Built by Odara Studios"
+                >
+                  <Image src="/odara-mark.png" alt="" width={18} height={18} className="h-4 w-4 object-contain" />
+                  <span>Built by [=ØDARA=] STUDIOS</span>
+                </a>
               </div>
             </div>
           </div>
