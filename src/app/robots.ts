@@ -1,16 +1,17 @@
 import type { MetadataRoute } from 'next';
-
-const BASE_URL = 'https://fileforge-iota.vercel.app';
+import { siteUrl } from '@/lib/site';
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      {
-        userAgent: '*',
-        allow: '/',
-        disallow: ['/api/', '/admin/'],
-      },
+      { userAgent: '*', allow: '/', disallow: ['/api/', '/admin/'] },
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'CCBot', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
     ],
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    sitemap: siteUrl('/sitemap.xml'),
+    host: siteUrl(),
   };
 }

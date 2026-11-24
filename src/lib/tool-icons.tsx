@@ -119,4 +119,53 @@ export const ToolIcons: Record<string, React.FC> = {
       <path d="M9 5l12-2" opacity="0.3" />
     </svg>
   ),
+  // PDF & new tools
+  'image-pdf': () => (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="13" height="13" rx="1.5" />
+      <circle cx="7.5" cy="7.5" r="1.2" />
+      <path d="M3 13l4-4 6 6" />
+      <path d="M16 9v11a1 1 0 001 1h4" />
+      <text x="16.5" y="17" fontSize="5" fill="currentColor" stroke="none" fontWeight="bold">PDF</text>
+    </svg>
+  ),
+  'pdf-image': () => (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+      <polyline points="14 2 14 8 20 8" />
+      <text x="7" y="16" fontSize="6" fill="currentColor" stroke="none" fontWeight="bold">PDF</text>
+      <path d="M17 18v-5m0 0l-2 2m2-2l2 2" />
+    </svg>
+  ),
+  'pdf-merge': () => (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M7 3h7l4 4v10a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" />
+      <polyline points="14 3 14 7 18 7" />
+      <path d="M8 13h7M8 16h5" />
+      <path d="M3 10v9a2 2 0 002 2h10" opacity="0.45" />
+    </svg>
+  ),
+  'pdf-split': () => (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8 3h7l4 4v10a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z" />
+      <polyline points="15 3 15 7 19 7" />
+      <path d="M10 12h6M10 15h4" />
+      <path d="M2 12h4m-2-2l2 2-2 2" />
+    </svg>
+  ),
+  'pdf-compress': () => (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+      <polyline points="14 2 14 8 20 8" />
+      <path d="M9 19l3-3 3 3M12 16v5" />
+      <path d="M9 11h6" />
+    </svg>
+  ),
+  'image-resize': () => (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="12" height="12" rx="1.5" />
+      <path d="M15 9h3a2 2 0 012 2v8a2 2 0 01-2 2h-8a2 2 0 01-2-2v-3" />
+      <path d="M8 13l8-8M11 5h5v5" />
+    </svg>
+  ),
 };

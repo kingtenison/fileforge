@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FileForge
 
-## Getting Started
+Free online file converter built with Next.js 16, React 19 and Tailwind CSS 4. 33 conversion tools across images, PDF, documents, video and audio. Most conversions run in the browser, so files are never uploaded.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Optional environment variables are documented in `.env.example`. Copy it to `.env.local`. The site works without any keys: document/audio conversions use a free public fallback provider, and CloudConvert is used automatically when `CLOUDCONVERT_API_KEY` is set.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Conversion engines
 
-## Learn More
+| Category | Engine |
+|---|---|
+| Images (compress, resize, format conversion, background removal) | Canvas + on-device ONNX model |
+| PDF (image→PDF, PDF→image, merge, split, compress) | jsPDF, PDF.js, pdf-lib |
+| Text → PDF | jsPDF |
+| Video → video | FFmpeg WASM (engine downloaded from CDN on first use) |
+| Documents (Word, Excel, PPT, PDF↔Word) | CloudConvert (if configured) or free Convert.FAST fallback |
+| Audio (MP3/WAV/M4A/AAC/OGG, video→MP3) | Convert.FAST |
 
-To learn more about Next.js, take a look at the following resources:
+Max file size: 50MB per file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Testing converters
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+With the app running:
 
-## Deploy on Vercel
+```bash
+node scripts/test-converters.mjs   # browser-based converters (requires local Chrome/Edge)
+node scripts/test-heavy.mjs        # background removal + API-backed converters
+node scripts/test-video.mjs        # FFmpeg video converters
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`CHROME_PATH` can override the Chrome executable used by the tests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## SEO / AEO
+
+- See `SEO_AEO_AUDIT.md` for the full audit and remediation report.
+- `public/llms.txt` lists all tools for LLM crawlers.
+- Canonical URLs, Open Graph and the sitemap use `NEXT_PUBLIC_SITE_URL` (set it in production if the domain changes).

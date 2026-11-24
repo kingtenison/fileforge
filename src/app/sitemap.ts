@@ -1,29 +1,21 @@
 import type { MetadataRoute } from 'next';
 import { TOOLS } from '@/lib/tools';
+import { SITE_URL, siteUrl } from '@/lib/site';
 
-const BASE_URL = 'https://fileforge-iota.vercel.app';
+const LAST_MODIFIED = new Date('2026-11-24T00:00:00.000Z');
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const toolPages = TOOLS.map((tool) => ({
-    url: `${BASE_URL}/tools/${tool.id}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
+  const toolPages: MetadataRoute.Sitemap = TOOLS.map((tool) => ({
+    url: siteUrl(`/tools/${tool.id}`),
+    lastModified: LAST_MODIFIED,
+    changeFrequency: 'weekly',
+    priority: tool.popular ? 0.9 : 0.7,
   }));
 
   return [
-    {
-      url: BASE_URL,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1.0,
-    },
-    {
-      url: `${BASE_URL}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
+    { url: SITE_URL, lastModified: LAST_MODIFIED, changeFrequency: 'weekly', priority: 1 },
+    { url: siteUrl('/about'), lastModified: LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.5 },
+    { url: siteUrl('/privacy'), lastModified: LAST_MODIFIED, changeFrequency: 'yearly', priority: 0.3 },
     ...toolPages,
   ];
 }

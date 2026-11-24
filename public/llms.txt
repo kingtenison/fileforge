@@ -1,0 +1,67 @@
+# FileForge
+
+> Free online file converter with 33 browser-based and API-powered tools for images, PDFs, documents, video and audio. No signup, no watermarks, 50MB max per file.
+
+FileForge helps people convert files without installing software. Image, PDF and text conversions run locally in the browser using Canvas, PDF.js and pdf-lib, so those files never leave the device. Word, Excel, PowerPoint and audio/video conversions use a third-party conversion API over HTTPS. All tools are free.
+
+## Key facts
+
+- 33 conversion tools across 5 categories: image, PDF, document, video, audio.
+- Maximum file size: 50MB per file.
+- No registration, no watermark, no subscription.
+- Image, PDF and text tools process files client-side.
+- Privacy policy: https://fileforge-iota.vercel.app/privacy
+
+## Image tools
+
+- Image Compress: https://fileforge-iota.vercel.app/tools/image-compress
+- Image Resize: https://fileforge-iota.vercel.app/tools/image-resize
+- JPG to WebP: https://fileforge-iota.vercel.app/tools/jpg-to-webp
+- WebP to JPG: https://fileforge-iota.vercel.app/tools/webp-to-jpg
+- PNG to JPG: https://fileforge-iota.vercel.app/tools/png-to-jpg
+- JPG to PNG: https://fileforge-iota.vercel.app/tools/jpg-to-png
+- PNG to WebP: https://fileforge-iota.vercel.app/tools/png-to-webp
+- Background Eraser: https://fileforge-iota.vercel.app/tools/background-eraser
+
+## PDF tools
+
+- Image to PDF: https://fileforge-iota.vercel.app/tools/image-to-pdf
+- JPG to PDF: https://fileforge-iota.vercel.app/tools/jpg-to-pdf
+- PNG to PDF: https://fileforge-iota.vercel.app/tools/png-to-pdf
+- WebP to PDF: https://fileforge-iota.vercel.app/tools/webp-to-pdf
+- PDF to JPG: https://fileforge-iota.vercel.app/tools/pdf-to-jpg
+- PDF to PNG: https://fileforge-iota.vercel.app/tools/pdf-to-png
+- Merge PDF: https://fileforge-iota.vercel.app/tools/pdf-merge
+- Split PDF: https://fileforge-iota.vercel.app/tools/pdf-split
+- Compress PDF: https://fileforge-iota.vercel.app/tools/pdf-compress
+
+## Document tools
+
+- Word to PDF: https://fileforge-iota.vercel.app/tools/word-to-pdf
+- PDF to Word: https://fileforge-iota.vercel.app/tools/pdf-to-word
+- Excel to PDF: https://fileforge-iota.vercel.app/tools/excel-to-pdf
+- PPT to PDF: https://fileforge-iota.vercel.app/tools/ppt-to-pdf
+- Text to PDF: https://fileforge-iota.vercel.app/tools/txt-to-pdf
+
+## Video tools
+
+- MP4 to WebM: https://fileforge-iota.vercel.app/tools/mp4-to-webm
+- WebM to MP4: https://fileforge-iota.vercel.app/tools/webm-to-mp4
+- AVI to MP4: https://fileforge-iota.vercel.app/tools/avi-to-mp4
+- MOV to MP4: https://fileforge-iota.vercel.app/tools/mov-to-mp4
+- MKV to WebM: https://fileforge-iota.vercel.app/tools/mkv-to-webm
+
+## Audio tools
+
+- MP3 to WAV: https://fileforge-iota.vercel.app/tools/mp3-to-wav
+- WAV to MP3: https://fileforge-iota.vercel.app/tools/wav-to-mp3
+- M4A to MP3: https://fileforge-iota.vercel.app/tools/m4a-to-mp3
+- MP3 to AAC: https://fileforge-iota.vercel.app/tools/mp3-to-aac
+- MP3 to OGG: https://fileforge-iota.vercel.app/tools/mp3-to-ogg
+- Video to MP3: https://fileforge-iota.vercel.app/tools/mp4-to-mp3
+
+## About
+
+- About: https://fileforge-iota.vercel.app/about
+- Privacy: https://fileforge-iota.vercel.app/privacy
+- Sitemap: https://fileforge-iota.vercel.app/sitemap.xml

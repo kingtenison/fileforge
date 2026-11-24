@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const REMOVE_BG_API_KEY = 'dJ2hGKJxPoYxXxzvbiQZauyF2';
+const REMOVE_BG_API_KEY = process.env.REMOVE_BG_API_KEY || 'dJ2hGKJxPoYxXxzvbiQZauyF2';
 const REMOVE_BG_API_URL = 'https://api.remove.bg/v1.0/remove';
 
 export async function POST(request: NextRequest) {

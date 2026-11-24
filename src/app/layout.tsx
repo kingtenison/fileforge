@@ -1,66 +1,46 @@
-import type { Metadata } from "next";
-import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next";
-import "./globals.css";
-import CursorGlow from "@/components/CursorGlow";
-import JsonLd from "@/components/JsonLd";
+import type { Metadata } from 'next';
+import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/next';
+import './globals.css';
+import CursorGlow from '@/components/CursorGlow';
+import JsonLd from '@/components/JsonLd';
+import { SITE_NAME, SITE_TAGLINE, SITE_URL, siteUrl } from '@/lib/site';
+import { TOOLS } from '@/lib/tools';
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fileforge-iota.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "FileForge — Free Online File Converter | Images, Documents, Video & Audio",
-    template: "%s | FileForge",
+    default: `${SITE_NAME} — Free Online File Converter for Images, PDF, Video & Audio`,
+    template: '%s | FileForge',
   },
   description:
-    "Convert images, documents, video, and audio files online for free. 21+ converters including JPG to WebP, Word to PDF, MP4 to MP3. No signup required — images processed in your browser for total privacy.",
+    `Free online file converter with ${TOOLS.length} tools for images, PDFs, documents, video and audio. Convert JPG to PDF, merge PDFs, compress images, extract MP3 from video and more. No signup, no watermarks.`,
   keywords: [
-    "file converter",
-    "online converter",
-    "free file converter",
-    "JPG to WebP",
-    "Word to PDF",
-    "PNG to JPG",
-    "MP4 to MP3",
-    "image compressor",
-    "background remover",
-    "PDF to Word",
-    "Excel to PDF",
-    "free online tools",
+    'file converter', 'free file converter', 'online file converter',
+    'image to PDF', 'JPG to PDF', 'PNG to JPG', 'JPG to WebP', 'WebP to JPG',
+    'PDF to JPG', 'merge PDF', 'split PDF', 'compress PDF', 'PDF to Word',
+    'Word to PDF', 'Excel to PDF', 'image compressor', 'image resize',
+    'background remover', 'video to MP3', 'M4A to MP3', 'free online tools',
   ],
-  authors: [{ name: "FileForge" }],
-  creator: "FileForge",
-  publisher: "FileForge",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  icons: {
-    icon: "/favicon.svg",
-  },
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  formatDetection: { email: false, address: false, telephone: false },
+  icons: { icon: '/favicon.svg' },
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://fileforge-iota.vercel.app",
-    siteName: "FileForge",
-    title: "FileForge — Free Online File Converter",
-    description:
-      "Convert images, documents, video, and audio files online for free. 21+ converters with no signup required.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "FileForge — Free Online File Converter",
-      },
-    ],
+    type: 'website',
+    locale: 'en_US',
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description: `Convert images, PDFs, documents, video and audio online for free. ${TOOLS.length} tools, no signup required.`,
+    images: [{ url: siteUrl('/og-image.png'), width: 1200, height: 630, alt: `${SITE_NAME} — ${SITE_TAGLINE}` }],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "FileForge — Free Online File Converter",
-    description:
-      "Convert images, documents, video, and audio files online for free. 21+ converters with no signup required.",
-    images: ["/og-image.png"],
+    card: 'summary_large_image',
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description: `Convert images, PDFs, documents, video and audio online for free. ${TOOLS.length} tools, no signup required.`,
+    images: [siteUrl('/og-image.png')],
   },
   robots: {
     index: true,
@@ -68,60 +48,53 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: "https://fileforge-iota.vercel.app",
-  },
+  alternates: { canonical: '/' },
 };
 
 const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "FileForge",
-  url: "https://fileforge-iota.vercel.app",
-  logo: "https://fileforge-iota.vercel.app/logo.png",
-  description:
-    "Free online file converter for images, documents, video, and audio. 21+ tools with no signup required.",
-  sameAs: [],
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': `${SITE_URL}#organization`,
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: siteUrl('/logo.png'),
+  description: `${SITE_TAGLINE} — ${TOOLS.length} free conversion tools for images, PDFs, documents, video and audio.`,
+  email: 'support@fileforge.app',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer support',
+    email: 'support@fileforge.app',
+    availableLanguage: ['English'],
+  },
 };
 
 const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "FileForge",
-  url: "https://fileforge-iota.vercel.app",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://fileforge-iota.vercel.app/?q={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${SITE_URL}#website`,
+  name: SITE_NAME,
+  url: SITE_URL,
+  publisher: { '@id': `${SITE_URL}#organization` },
+  inLanguage: 'en-US',
 };
 
 const softwareSchema = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "FileForge",
-  applicationCategory: "MultimediaApplication",
-  operatingSystem: "Web Browser",
-  url: "https://fileforge-iota.vercel.app",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-  },
-  description:
-    "Free online file converter for images, documents, video, and audio with 21+ conversion tools.",
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: SITE_NAME,
+  applicationCategory: 'UtilitiesApplication',
+  operatingSystem: 'Any (web browser)',
+  url: SITE_URL,
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  description: `${SITE_TAGLINE} with ${TOOLS.length} browser-based and API-powered conversion tools.`,
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <head>
